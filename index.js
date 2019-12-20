@@ -1,4 +1,35 @@
 var Storager = {
+    Cookie: {
+        get: function(name) {
+            var matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        },
+        set: function(name, value, options = {}) {
+            options = {
+                path: '/',
+                ...options
+            };
+            if (options.expires.toUTCString) {
+                options.expires = options.expires.toUTCString();
+            }
+            var updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+            for (var optionKey in options) {
+                updatedCookie += "; " + optionKey;
+                var optionValue = options[optionKey];
+                if (optionValue !== true) {
+                    updatedCookie += "=" + optionValue;
+                }
+            }
+            document.cookie = updatedCookie;
+        },
+        delete: function(name) {
+            this.set(name, "", {
+                'max-age': -1
+            })
+        }
+    },
     LocalStorage: {
         set: function(key, value) {
             localStorage.setItem(key, value)
