@@ -7,24 +7,25 @@ var Storager = {
             return matches ? decodeURIComponent(matches[1]) : undefined;
         },
         set: function(name, value, options = {}) {
-            options = {
+            var optionsData = Object.assign({
                 path: '/',
-                ...options
-            };
-            if (options.expires.toUTCString) {
-                options.expires = options.expires.toUTCString();
+            }, options);
+
+            if (optionsData.expires) {
+                optionsData.expires = optionsData.expires.toUTCString();
             }
+            
             var updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-            for (var optionKey in options) {
+            for (var optionKey in optionsData) {
                 updatedCookie += "; " + optionKey;
-                var optionValue = options[optionKey];
+                var optionValue = optionsData[optionKey];
                 if (optionValue !== true) {
                     updatedCookie += "=" + optionValue;
                 }
             }
             document.cookie = updatedCookie;
         },
-        delete: function(name) {
+        remove: function(name) {
             this.set(name, "", {
                 'max-age': -1
             })
