@@ -53,7 +53,7 @@ SessionStorage.clear();
 ```
 <a name="additionalmetnods"></a>
 ## Additional methods for LocalStorage and SessionStorage
-You can now save objects and arrays to localstorage
+You can now save objects and arrays
 - setObject
 ```js
 var object = {
