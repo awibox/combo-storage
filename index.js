@@ -1,4 +1,4 @@
-var Storager = {
+var ComboStorage = {
     Cookie: {
         get: function(name) {
             var matches = document.cookie.match(new RegExp(
@@ -14,7 +14,6 @@ var Storager = {
             if (optionsData.expires) {
                 optionsData.expires = optionsData.expires.toUTCString();
             }
-            
             var updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
             for (var optionKey in optionsData) {
                 updatedCookie += "; " + optionKey;
@@ -36,13 +35,13 @@ var Storager = {
             localStorage.setItem(key, value)
         },
         get: function(key) {
-            return localStorage.getItem(key);
+            return localStorage.getItem(key) ? localStorage.getItem(key) : null;
         },
         setObject: function(key, value) {
             localStorage.setItem(key, JSON.stringify(value));
         },
         getObject: function(key) {
-            return JSON.parse(localStorage.getItem(key));
+            return JSON.parse(localStorage.getItem(key)) ? JSON.parse(localStorage.getItem(key)) : {};
         },
         remove: function(key) {
             localStorage.removeItem(key);
@@ -56,13 +55,13 @@ var Storager = {
             sessionStorage.setItem(key, value)
         },
         get: function(key) {
-            return sessionStorage.getItem(key);
+            return sessionStorage.getItem(key) ? sessionStorage.getItem(key) : null;
         },
         setObject: function(key, value) {
             sessionStorage.setItem(key, JSON.stringify(value));
         },
         getObject: function(key) {
-            return JSON.parse(sessionStorage.getItem(key));
+            return JSON.parse(sessionStorage.getItem(key)) ? JSON.parse(sessionStorage.getItem(key)) : null;
         },
         remove: function(key) {
             sessionStorage.removeItem(key);
@@ -73,4 +72,4 @@ var Storager = {
     }
 };
 
-module.exports = Storager;
+module.exports = ComboStorage;
