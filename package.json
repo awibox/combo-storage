@@ -1,24 +1,24 @@
 {
-  "name": "storager",
+  "name": "combo-storage",
   "version": "1.0.0",
   "description": "Package for use storage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack --mode production"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awibox/storager.git"
+    "url": "git+https://github.com/awibox/combo-storage.git"
   },
   "keywords": [
     "cookie",
-    "localstorage"
+    "localstorage",
+    "sessionstorage"
   ],
   "author": "awibox",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/awibox/storager/issues"
+    "url": "https://github.com/awibox/combo-storage/issues"
   },
-  "homepage": "https://github.com/awibox/storager#readme"
+  "homepage": "https://github.com/awibox/combo-storage#readme"
 }
