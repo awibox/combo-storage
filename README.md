@@ -1,9 +1,5 @@
 ![combo-storage](https://repository-images.githubusercontent.com/228675568/0c2f3900-2426-11ea-91c3-ce97fdf2164c)
 
-
-## Description
-The package allows you to manage data in LocalStorage, SessionStorage and Cookies
-
 ## Table of contents
 * [Installation](#installation)
 * [Getting started](#gettingstarted)
@@ -20,7 +16,7 @@ npm install combo-storage
 
 <a name="gettingstarted"></a>
 ## Getting started
-You should import the required repositories to use the package
+You should import the required storages to use the package
 ```js
 import { LocalStorage, SeessionStorage, Cookie } from 'combo-storage'
 ```
@@ -31,22 +27,22 @@ LocalStorage.set('user', 'awibox');
 
 <a name="basemetnods"></a>
 ## Base methods for LocalStorage and SessionStorage
-- set
+#### set
 ```js
 LocalStorage.set(key, value);
 SessionStorage.set(key, value);
 ```
-- get
+#### get
 ```js
 LocalStorage.get(key);
 SessionStorage.get(key);
 ```
-- remove
+#### remove
 ```js
 LocalStorage.remove(key);
 SessionStorage.remove(key);
 ```
-- сlear
+#### сlear
 ```js
 LocalStorage.clear();
 SessionStorage.clear();
@@ -54,7 +50,7 @@ SessionStorage.clear();
 <a name="additionalmetnods"></a>
 ## Additional methods for LocalStorage and SessionStorage
 You can now save objects and arrays
-- setObject
+#### setObject
 ```js
 var object = {
     id: 1,
@@ -63,14 +59,14 @@ var object = {
 LocalStorage.setObject(key, object);
 SessionStorage.setObject(key, object);
 ```
-- getObject
+#### getObject
 ```js
 LocalStorage.getObject(key);
 SessionStorage.getObject(key);
 ```
 <a name="cookie"></a>
 ## Cookie methods
-- set
+#### set
 ```js
 // Options for example
 var options = {
@@ -82,12 +78,11 @@ var options = {
 };
 Cookie.set(name, value, options);
 ```
-- get
+#### get
 ```js
 Cookie.get(name)
 ```
-- remove
+### remove
 ```js
 Cookie.remove(name)
 ```
-
