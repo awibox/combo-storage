@@ -82,7 +82,7 @@ Cookie.set(name, value, options);
 ```js
 Cookie.get(name)
 ```
-### remove
+#### remove
 ```js
 Cookie.remove(name)
 ```
