@@ -1,8 +1,6 @@
-import cookie from './components/Cookie';
-import localStorage from './components/LocalStorage';
-import sessionStorage from './components/SessionStorage';
+import CookieComponent from './components/Cookie';
+import StorageComponent from './components/Storage';
 
-
-export const Cookie = new cookie();
-export const LocalStorage = new localStorage();
-export const SessionStorage = new sessionStorage();
+export const Cookie = new CookieComponent(document.cookie);
+export const LocalStorage = new StorageComponent(localStorage);
+export const SessionStorage = new StorageComponent(sessionStorage);
