@@ -10,28 +10,14 @@ export default class Cookie {
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
-  set(name, value, options = {}) {
-    const optionsData = { path: '/', ...options };
-
-    if (optionsData.expires) {
-      optionsData.expires = optionsData.expires.toUTCString();
-    }
-    let updatedCookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}`;
-    for (const optionKey in optionsData) {
-      if ({}.hasOwnProperty.call(optionsData, optionKey)) {
-        updatedCookie += `; ${optionKey}`;
-        const optionValue = optionsData[optionKey];
-        if (optionValue !== true) {
-          updatedCookie += `=${optionValue}`;
-        }
-      }
-    }
-    this.cookie = updatedCookie;
+  set(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = `expires=${d.toUTCString()}`;
+    this.cookie = `${name}=${value};${expires};path=/`;
   }
 
   remove(name) {
-    this.set(name, '', {
-      'max-age': -1,
-    });
+    this.set(name, '', -1);
   }
 }
