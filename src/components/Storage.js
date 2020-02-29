@@ -9,7 +9,8 @@ export default class Storage {
 
   get(key) {
     const value = this.storage.getItem(key);
-    const valueResult = value.indexOf('}') > value.indexOf('{') || value.indexOf(']') > value.indexOf('[') ? JSON.parse(value) : value;
+    const condition = value ? value.indexOf('}') > value.indexOf('{') || value.indexOf(']') > value.indexOf('[') : false;
+    const valueResult = condition ? JSON.parse(value) : value;
     return value ? valueResult : null;
   }
 
@@ -27,6 +28,6 @@ export default class Storage {
   }
 
   getObject(key) {
-    return JSON.parse(this.storage.getItem(key)) ? JSON.parse(sessionStorage.getItem(key)) : {};
+    return this.storage.getItem(key) ? JSON.parse(this.storage.getItem(key)) : {};
   }
 }
