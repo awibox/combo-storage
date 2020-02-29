@@ -34,8 +34,5 @@
         ]
       }
     }
-  },
-  "rules": {
-    "no-restricted-syntax": "warn"
   }
 }
