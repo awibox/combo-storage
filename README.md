@@ -30,22 +30,22 @@ LocalStorage.set('user', 'awibox');
 #### set
 ```js
 LocalStorage.set(key, value);
-SessionStorage.set(key, value);
+Storage.set(key, value);
 ```
 #### get
 ```js
 LocalStorage.get(key);
-SessionStorage.get(key);
+Storage.get(key);
 ```
 #### remove
 ```js
 LocalStorage.remove(key);
-SessionStorage.remove(key);
+Storage.remove(key);
 ```
 #### сlear
 ```js
 LocalStorage.clear();
-SessionStorage.clear();
+Storage.clear();
 ```
 <a name="additionalmetnods"></a>
 ## Additional methods for LocalStorage and SessionStorage
@@ -57,12 +57,12 @@ var object = {
     value: 'object'
 };
 LocalStorage.setObject(key, object);
-SessionStorage.setObject(key, object);
+Storage.setObject(key, object);
 ```
 #### getObject
 ```js
 LocalStorage.getObject(key);
-SessionStorage.getObject(key);
+Storage.getObject(key);
 ```
 <a name="cookie"></a>
 ## Cookie methods
