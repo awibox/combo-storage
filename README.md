@@ -45,21 +45,21 @@ LocalStorage.set('user', 'awibox');
 ## Base methods for LocalStorage and SessionStorage
 |Method|LocalStorage|SessionStorage
 |------|------------|--------------|
-|*set*|```LocalStorage.set(key, value)```|```SessionStorage.set(key, value)```|
-|*get*|```LocalStorage.get(key)```|```SessionStorage.get(key)```|
-|*remove*|```LocalStorage.remove(key)```|```SessionStorage.remove(key)```|
-|*сlear*|```LocalStorage.clear()```|```SessionStorage.clear()```|
+|**set**|```LocalStorage.set(key, value)```|```SessionStorage.set(key, value)```|
+|**get**|```LocalStorage.get(key)```|```SessionStorage.get(key)```|
+|**remove**|```LocalStorage.remove(key)```|```SessionStorage.remove(key)```|
+|**сlear**|```LocalStorage.clear()```|```SessionStorage.clear()```|
 
-*Note:* get and set methods are available for working with objects and arrays.
+**Note:** get and set methods are available for working with objects and arrays.
 
 
 <a name="cookie"></a>
 ## Cookie methods
 |Method|Example|
 |------|------------|
-|*set*|```Cookie.set(name, value, days);```|
-|*get*|```Cookie.get(name)```|
-|*remove*|```Cookie.remove(name)```|
+|**set**|```Cookie.set(name, value, days);```|
+|**get**|```Cookie.get(name)```|
+|**remove**|```Cookie.remove(name)```|
 
 <a name="contributing"></a>
 ## Contributing
