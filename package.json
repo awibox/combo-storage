@@ -2,8 +2,9 @@
   "name": "combo-storage",
   "version": "1.1.1",
   "description": "The package allows you to manage data in LocalStorage, SessionStorage and Cookies",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/awibox/combo-storage/issues"
   },
-  "homepage": "https://github.com/awibox/combo-storage#readme"
+  "homepage": "https://github.com/awibox/combo-storage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "8.0.6",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
 }
