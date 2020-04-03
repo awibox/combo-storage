@@ -5,7 +5,7 @@ const testObject = {
   name: 'object',
   count: 33,
 };
-const testArray = [1,2,3,4,5,6];
+const testArray = [1, 2, 3, 4, 5, 6];
 let mockStorage = {};
 const localStorage = {
   setItem: (key, value) => {
@@ -16,7 +16,7 @@ const localStorage = {
     mockStorage[key] = null;
   },
   clear: () => {
-    mockStorage = {}
+    mockStorage = {};
   },
 };
 
