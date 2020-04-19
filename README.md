@@ -1,20 +1,17 @@
+<div align="center">
+
 ![combo-storage](https://repository-images.githubusercontent.com/228675568/0c2f3900-2426-11ea-91c3-ce97fdf2164c)
 
-<p align="center">
-    <a href="https://www.npmjs.com/package/combo-storage">
-        <img src="https://img.shields.io/npm/v/combo-storage" alt="npm version">
-    </a>
-    <a href="https://travis-ci.org/awibox/combo-storage">
-        <img src='https://travis-ci.org/awibox/combo-storage.svg?branch=master' alt='Build' />
-    </a>
-    <a href='https://coveralls.io/github/awibox/combo-storage?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/combo-storage/badge.svg?branch=master' alt='Coverage Status' />
-    </a>
-    <a href="https://www.npmjs.com/package/combo-storage">
-        <img src="https://img.shields.io/npm/dm/combo-storage" alt="Downloads">
-    </a>
-    <img src="https://img.shields.io/github/license/awibox/combo-storage" alt="license">
-</p>
+[![Version](https://img.shields.io/npm/v/combo-storage)](https://www.npmjs.com/package/combo-storage)
+[![Build](https://travis-ci.org/awibox/combo-storage.svg?branch=master)](https://travis-ci.org/awibox/combo-storage)
+[![Coverage](https://coveralls.io/repos/github/awibox/combo-storage/badge.svg?branch=master)](https://coveralls.io/github/awibox/combo-storage?branch=master)
+[![Minified size](https://img.shields.io/bundlephobia/min/combo-storage)](https://github.com/awibox/combo-storage/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/combo-storage)](https://www.npmjs.com/package/combo-storage)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=awibox/combo-storage)](https://dependabot.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/awibox/combo-storage/pulls)
+[![Tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
+</div>
 
 ## Table of contents
 * [Installation](#installation)
