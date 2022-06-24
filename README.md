@@ -3,7 +3,7 @@
 ![combo-storage](https://repository-images.githubusercontent.com/228675568/0c2f3900-2426-11ea-91c3-ce97fdf2164c)
 
 [![Version](https://img.shields.io/npm/v/combo-storage)](https://www.npmjs.com/package/combo-storage)
-[![Build](https://img.shields.io/github/workflow/status/awibox/combo-storage/Deploy)](https://github.com/awibox/combo-storage/actions)
+[![Build](https://img.shields.io/github/workflow/status/awibox/combo-storage/Release)](https://github.com/awibox/combo-storage/actions)
 [![Coverage](https://coveralls.io/repos/github/awibox/combo-storage/badge.svg?branch=master)](https://coveralls.io/github/awibox/combo-storage?branch=master)
 [![Minified size](https://img.shields.io/bundlephobia/min/combo-storage)](https://github.com/awibox/combo-storage/blob/master/LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/combo-storage)](https://www.npmjs.com/package/combo-storage)
