@@ -9,7 +9,8 @@
     "fix": "eslint --fix --report-unused-disable-directives src",
     "test": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit"
+    "setup": "cp ./.github/hooks/pre-commit ./.git/hooks/pre-commit && chmod +x ./.git/hooks/pre-commit",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
