@@ -2,7 +2,6 @@
   "branches": "master",
   "repositoryUrl": "https://github.com/awibox/combo-storage",
   "plugins": [
-    "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
       "@semantic-release/npm",
