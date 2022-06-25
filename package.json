@@ -1,6 +1,6 @@
 {
   "name": "combo-storage",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "The package allows you to manage data in LocalStorage, SessionStorage and Cookies",
   "main": "dist/index.js",
   "scripts": {
